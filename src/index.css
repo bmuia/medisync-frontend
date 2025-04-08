@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "MS Sans Serif", "Tahoma", "Arial", sans-serif;
+}
+.retro-button {
+  background: #dcdcdc;
+  border: 2px solid #a0a0a0;
+  padding: 6px 15px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.retro-button:hover {
+  background: #e0e0e0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4), -1px -1px 3px rgba(255, 255, 255, 0.6);
+}
+
+.retro-button:active {
+  background: #c0c0c0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
