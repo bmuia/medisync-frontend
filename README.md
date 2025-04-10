@@ -1,12 +1,67 @@
-# React + Vite
+### HEALTH INFORMATION EXCHANGE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## PROJET OVERVIEW
+HIE is a platform designed to enable hospitals and healthcare providers to securely share patient data. the primary goal is to improve the  coordination of care, enhance patient safety and streamline clinical processes by allowing authorised personell to access acurate health information across diffrent hospitals.
 
-Currently, two official plugins are available:
+## FEATURES
+- Real time access to patient records
+- Secure data sharing across hospitals,clinic and healthcare providers
+- Encryption and compliance with HIPAA standards
+- Role based authentication and proper authorisation
+- Downloading patient records in pdf format
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## TECHNOLOGIES USED
+- **backend**: django,redis
+- **frontend**: react.js,tailwind css
+- **database**: postgresql
+- **API**: FHIR(Fast healthcare interopelability resources )
+- **authentication**: JWT
 
-## Expanding the ESLint configuration
+## INSTALLATION INSTRUCTIONS
+### PREREQUISITES 
+- Python 3.12.1
+- Postgresql >= 16
+- React.js
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Steps
+1. Clone as repository:
+ ```bash
+   git clone https://github.com/bmuia/medisync-frontend.git 
+   ``` 
+2. Navigate to the directory and install dependancies:
+
+```bash
+   cd medisync-frontend
+   npm install
+   npm install tailwindcss @tailwindcss/vite
+   ```
+3. Run the development server:
+```bash 
+   npm run dev
+   ```
+
+## Usage
+- Access the platform by navigating to **http://localhost:5173**
+- log in via login dashboard
+- use the provided API endpoints to interact with healthcare data
+
+## Contributing 
+We welcome contributions! To contribute: 
+1. Fork the repository.
+2. Create a new branch("git checkout -b feature/your feature")
+3. Commit your changes("git commit -am 'add new feature'")
+4. Push to the branch("git push origin feature/your feature")
+5. Open a pull request 
+
+## Licence
+This project is licenced under the MIT licence -see the [LICENCE](LICENCE) File for details. 
+
+## Acknowledgements 
+- Thanks to the developers for providing an ease to use API framework
+- Special thanks to [Austin Odera](aodera@usiu.ac.ke) for providing the idea.
+
+##  Security
+. The system complies with HIPAA standards for patient data protection
+. Authentication uses JWT tokens for secure access
+
+
